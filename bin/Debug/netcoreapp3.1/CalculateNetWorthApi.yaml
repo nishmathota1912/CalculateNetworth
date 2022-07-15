@@ -13,12 +13,12 @@ spec:
         app: CalculateNetWorthApi
     spec:
       containers:
-      - name: calculatenetworthrepos
+      - name: calculatenetworthmicroservice
         image: calculatenetworthcr.azurecr.io/calculatenetworthimage:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: calculatenetworthsecret
+      - name: calculatenetworthsc
 
 ---
 apiVersion: v1
